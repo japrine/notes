@@ -12,3 +12,10 @@
   
 * Veeam - https://www.veeam.com/windows-endpoint-server-backup-free.html
 </details>
+
+<details>
+  <summary>TFTP Server</summary>
+  
+* TFTP Server - https://www.solarwinds.com/free-tools/free-tftp-server
+* Tftpd64 - http://tftpd32.jounin.net/
+</details>
