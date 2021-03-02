@@ -3,7 +3,7 @@
   <summary>USB Image / ISO Bootable Writer</summary>
   
   ## Windows
-Rufus
-Etcher
-imageUSB
+* Rufus
+* Etcher
+* imageUSB
 </details>
