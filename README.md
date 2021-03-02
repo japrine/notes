@@ -19,3 +19,9 @@
 * TFTP Server - https://www.solarwinds.com/free-tools/free-tftp-server
 * Tftpd64 - http://tftpd32.jounin.net/
 </details>
+
+<details>
+  <summary>FTP Server</summary>
+  
+* FileZilla - https://filezilla-project.org/
+</details>
