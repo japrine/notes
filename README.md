@@ -1,2 +1,6 @@
-# software
-List of common stuff
+# Software List
+USB Image / ISO Bootable Writer
+Windows-
+Rufus
+Etcher
+imageUSB
