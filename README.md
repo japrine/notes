@@ -1,6 +1,8 @@
 # Software List
-USB Image / ISO Bootable Writer
-Windows-
+<details>
+  <summary>USB Image / ISO Bootable Writer</summary>
+  ## Windows
 Rufus
 Etcher
 imageUSB
+</details>
