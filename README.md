@@ -27,3 +27,9 @@ Software that seems to work.
   
 * FileZilla - https://filezilla-project.org/
 </details>
+
+<details>
+  <summary>Hex Editor</summary>
+  
+* HxD20 - https://mh-nexus.de/en/downloads.php?product=HxD20
+</details>
