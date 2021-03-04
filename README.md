@@ -33,3 +33,10 @@ Software that seems to work.
   
 * HxD20 - https://mh-nexus.de/en/downloads.php?product=HxD20
 </details>
+
+<details>
+  <summary>GPU Hacking</summary>
+  
+* NVidia NVFlash - https://www.techpowerup.com/download/nvidia-nvflash/
+* VBios Collection - https://www.techpowerup.com/vgabios/
+</details>
