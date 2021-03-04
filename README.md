@@ -1,4 +1,6 @@
 # Windows Software List
+Software that seems to work.
+
 <details>
   <summary>USB Image / ISO Bootable Writer</summary>
   
