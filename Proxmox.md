@@ -81,12 +81,18 @@ vfio_virqfd
 ```
 * reboot
 
-If needed, blacklist drivers from starting
+* If needed, blacklist drivers from starting:
 ```
 echo "blacklist radeon" >> /etc/modprobe.d/blacklist.conf
 echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
 echo "blacklist nvidia" >> /etc/modprobe.d/blacklist.conf
 ```
+
+* If needed, manually set GPU etc to use vfio driver.
+  * Check if driver is already vfio using lspci -v
+  * To manually set, get device IDs (eg 01:00.0 0000: 10de:1b81 (rev a1)"&" 01:00.1 0000: 10de:10f0 (rev a1) " - You need 10de:1b81 and 10de:10f0.)
+  * echo "options vfio-pci ids=10de:DEV_ID1,10de:DEV_ID2" > /etc/modprobe.d/vfio.conf  - replace DEV_ID1&2 with actual addresses from above.
+  * After rebooting, changes can be verified with lspci -v
 
 </details>
 
