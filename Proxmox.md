@@ -39,7 +39,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
   
 * nano /etc/default/grub
 ```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off video=efifb:off"
 ```
 <details>
   <summary>Arg Details</summary>
