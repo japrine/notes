@@ -44,7 +44,9 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstr
 <details>
   <summary>Arg Details</summary>
   
-* pcie_acs_override - Hack to split IOMMU groups further. Shouldn't be used if not needed.
+* pcie_acs_override (Shouldn't be used unless needed for group isolation)
+  * downstream - Hack to split IOMMU groups further.
+  * multifunction - Further splits Multifunc devices.
 </details>
 
 * update-grub
