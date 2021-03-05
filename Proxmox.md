@@ -80,6 +80,14 @@ vfio_pci
 vfio_virqfd
 ```
 * reboot
+
+If needed, blacklist drivers from starting
+```
+echo "blacklist radeon" >> /etc/modprobe.d/blacklist.conf
+echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+echo "blacklist nvidia" >> /etc/modprobe.d/blacklist.conf
+```
+
 </details>
 
 ---
