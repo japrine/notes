@@ -96,3 +96,20 @@ cpu: host,hidden=1,flags=+pcid
 ```
 </details>
 
+---
+
+<details>
+  <summary>Manual VM Managment Commands</summary>
+  
+* qm stop VMID - Manually Stop VM
+* qm destroy VMID - Delete VM
+* qm unlock VMID - Unlock if needed before Destroy etc
+</details>
+
+---
+
+<details>
+  <summary>Linux / Host Managment Commands</summary>
+  
+* sgdisk --zap-all <device> - Clears all partitions so disk can be reassigned/used
+</details>
