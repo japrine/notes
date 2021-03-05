@@ -27,6 +27,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 * VFIO conf - /etc/modprobe.d/vfio.conf
 </details>
 
+---
 
 <details>
   <summary>Install to ZFS soft RAID</summary>
@@ -34,6 +35,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 * Normal Install - When picking drive, choose option/advance button and choose mirror stripe raidz etc.
 </details>
 
+---
 
 <details>
   <summary>IOMMU Hypervisor Setup</summary>
@@ -80,6 +82,7 @@ vfio_virqfd
 * reboot
 </details>
 
+---
 
 <details>
   <summary>IOMMU VM Setup</summary>
