@@ -128,7 +128,7 @@ cpu: host,hidden=1,flags=+pcid
   * Using WinSCP etc, upload modified rom to /user/share/kvm/
   * Rom can be specified in VMID.conf with ',romfile=fixed_gpubios.rom' added to the hostpci0 passthrough line.
 
-* Optional ARGS that sometimes help:
+* VM Config optional ARGS that sometimes help:
   * args: -cpu 'host,+kvm_pv_unhalt,+kvm_pv_eoi,hv_vendor_id=NV43FIX,kvm=off'
 
 </details>
