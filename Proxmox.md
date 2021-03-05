@@ -22,10 +22,10 @@ reboot
 
 ### IOMMU VM Setup
 
-BIOS: OVMF(UEFI)
-Add->EFI Disk
-Machine: G35
-nano /etc/pve/qemu-server/100.conf
+* BIOS: OVMF(UEFI)
+* Add->EFI Disk
+* Machine: G35
+* nano /etc/pve/qemu-server/100.conf
 ```
 cpu: host,hidden=1,flags=+pcid
 ```
