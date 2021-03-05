@@ -44,9 +44,28 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstr
 <details>
   <summary>Arg Details</summary>
   
+* quiet - non-verbose boot (hides tons of loading and checks)
 * pcie_acs_override (Shouldn't be used unless needed for group isolation)
   * downstream - Hack to split IOMMU groups further.
   * multifunction - Further splits Multifunc devices.
+* The following are all ways to disable the boot frame buffer (one or more can be used)
+  * vga=normal - Disable Frame Buffer
+  * nofb - No Frame Buffer
+  * nomodeset - Tells Kernel not to load video drivers and use BIOS mode during boot
+  * video=vesafb:off - Frame Buffer Off
+  * video=efifb:off - UEFI Frame Buffer mapping
+  * i915.modset=0 - Frame Buffer Off
+Verify if Framebuffer is being used:
+```
+ls -l /dev/fb*
+```
+If the frame buffer is enabled, the above command will usually return /dev/fbX (X being a number; usually 0).
+or
+```
+grep -i "frame buffer" /var/log/syslog
+```
+If the frame buffer is enabled, it should return something such as: "Console: switching to colour frame buffer device 160x64, fb0: inteld"
+
 </details>
 
 * update-grub
