@@ -108,6 +108,17 @@ echo "blacklist nvidia" >> /etc/modprobe.d/blacklist.conf
 ```
 cpu: host,hidden=1,flags=+pcid
 ```
+
+* If Video BIOS Needs to be modified to get working:
+  * Download BIOS using NVFlash
+    * Download NVFlash and create/move to C:\nvflash\
+    * Run CMD as Admin and run:
+    * nvflash.exe --save gpubios.rom
+  * Using Hex Editor (HxD20 Works) open rom:
+    * Find "UªyëK7400éLwÌVIDEO" which is the start of the actual bios, delete everything before it.  THe offset for that line should change to 8 zeros.  Save as.
+  * Using WinSCP etc, upload modified rom to /user/share/kvm/
+  * Rom can be specified in VMID.conf with ',romfile=fixed_gpubios.rom' added to the hostpci0 passthrough line.
+
 </details>
 
 ---
