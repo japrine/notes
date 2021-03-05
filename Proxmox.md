@@ -45,6 +45,8 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off video=efifb:off"
 ```
+  * update-grub
+
 <details>
   <summary>GRUB_CMDLINE_LINUX_DEFAULT ARGS</summary>
   
@@ -72,7 +74,6 @@ If the frame buffer is enabled, it should return something such as: "Console: sw
 
 </details>
 
-  * update-grub
 * For ZFS Boot:
   * nano /etc/kernel/cmdline
 ```
