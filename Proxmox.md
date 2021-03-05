@@ -40,7 +40,8 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 <details>
   <summary>IOMMU Hypervisor Setup</summary>
   
-* nano /etc/default/grub
+* For EXT3/4-LVM GRUB Boot:
+  * nano /etc/default/grub
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off video=efifb:off"
 ```
@@ -71,7 +72,14 @@ If the frame buffer is enabled, it should return something such as: "Console: sw
 
 </details>
 
-* update-grub
+  * update-grub
+* For ZFS Boot:
+  * nano /etc/kernel/cmdline
+```
+root=ZFS=rpool/ROOT/pve-1 boot=zfs quiet amd_iommu=on iommu=pt video=vesafb:off video=efifb:off
+```
+  * pve-efiboot-tool refresh
+
 * nano /etc/modules
 ```
 vfio
