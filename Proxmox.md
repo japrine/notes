@@ -12,7 +12,16 @@ sed -i.bak 's|deb https://enterprise.proxmox.com/debian jessie pve-enterprise|\#
 echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/apt/sources.list.d/pve-no-sub.list
 ```
 
-### Install to soft RAID
+### File Locations
+
+* Non-ZFS Boot load - /etc/default/grub (afterward update-grub)
+* Add Modules - /etc/modules
+* Driver loading blacklist - /etc/modprobe.d/blacklist.conf
+* VM Config - /etc/pve/qemu-server/<VM-ID>.conf
+* Custom romfile location - /user/share/kvm/
+* VFIO conf - /etc/modprobe.d/vfio.conf
+
+### Install to ZFS soft RAID
 
 Normal Install - When picking drive, choose option/advance button and choose mirror stripe raidz etc.
 
