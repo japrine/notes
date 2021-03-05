@@ -45,7 +45,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off video=efifb:off"
 ```
 <details>
-  <summary>Arg Details</summary>
+  <summary>GRUB_CMDLINE_LINUX_DEFAULT ARGS</summary>
   
 * quiet - non-verbose boot (hides tons of loading and checks)
 * pcie_acs_override (Shouldn't be used unless needed for group isolation)
