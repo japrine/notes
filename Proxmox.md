@@ -1,5 +1,19 @@
 ## Proxmox Notes
 
+<details>
+  <summary>New Install Stuff</summary>
+  
+* Disable subscription nag popups
+```
+sed -i.bak "s/data.status !== 'Active'/false/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
+```
+* Disable Enterprise Repositories
+```
+sed -i.bak 's|deb https://enterprise.proxmox.com/debian jessie pve-enterprise|\# deb https://enterprise.proxmox.com/debian jessie pve-enterprise|' /etc/apt/sources.list.d/pve-enterprise.list
+echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/apt/sources.list.d/pve-no-sub.list
+```
+</details>
+
 ### New Install Stuff
 
 * Disable subscription nag popups
