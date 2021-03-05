@@ -14,33 +14,29 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 ```
 </details>
 
-### New Install Stuff
 
-* Disable subscription nag popups
-```
-sed -i.bak "s/data.status !== 'Active'/false/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
-```
-* Disable Enterprise Repositories
-```
-sed -i.bak 's|deb https://enterprise.proxmox.com/debian jessie pve-enterprise|\# deb https://enterprise.proxmox.com/debian jessie pve-enterprise|' /etc/apt/sources.list.d/pve-enterprise.list
-echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/apt/sources.list.d/pve-no-sub.list
-```
-
-### File Locations
-
+<details>
+  <summary>File Locations</summary>
+  
 * Non-ZFS Boot load - /etc/default/grub (afterward update-grub)
 * Add Modules - /etc/modules
 * Driver loading blacklist - /etc/modprobe.d/blacklist.conf
 * VM Config - /etc/pve/qemu-server/<VM-ID>.conf
 * Custom romfile location - /user/share/kvm/
 * VFIO conf - /etc/modprobe.d/vfio.conf
+</details>
 
-### Install to ZFS soft RAID
 
-Normal Install - When picking drive, choose option/advance button and choose mirror stripe raidz etc.
+<details>
+  <summary>Install to ZFS soft RAID</summary>
+  
+* Normal Install - When picking drive, choose option/advance button and choose mirror stripe raidz etc.
+</details>
 
-### IOMMU Hypervisor Setup
 
+<details>
+  <summary>IOMMU Hypervisor Setup</summary>
+  
 * nano /etc/default/grub
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet iommu=pt amd_iommu=1 pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
@@ -54,9 +50,12 @@ vfio_pci
 vfio_virqfd
 ```
 * reboot
+</details>
 
-### IOMMU VM Setup
 
+<details>
+  <summary>IOMMU VM Setup</summary>
+  
 * BIOS: OVMF(UEFI)
 * Add->EFI Disk
 * Machine: G35
@@ -64,4 +63,5 @@ vfio_virqfd
 ```
 cpu: host,hidden=1,flags=+pcid
 ```
+</details>
 
