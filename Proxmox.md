@@ -40,7 +40,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 <details>
   <summary>IOMMU Hypervisor Setup</summary>
   
-(Proxmox's Guide)[https://pve.proxmox.com/wiki/Pci_passthrough]
+https://pve.proxmox.com/wiki/Pci_passthrough
   
 * For EXT3/4-LVM GRUB Boot:
   * nano /etc/default/grub
