@@ -41,6 +41,7 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
   <summary>IOMMU Hypervisor Setup</summary>
   
 https://pve.proxmox.com/wiki/Pci_passthrough
+https://hackmd.io/@edingroot/SkGD3Q7Wv#B-Enable-the-IOMMU-for-systemd-boot-Proxmox-on-UEFI
   
 * For EXT3/4-LVM GRUB Boot:
   * nano /etc/default/grub
