@@ -156,3 +156,16 @@ cpu: host,hidden=1,flags=+pcid
   
 * sgdisk --zap-all <device> - Clears all partitions so disk can be reassigned/used
 </details>
+
+---
+
+<details>
+  <summary>Reattach VM Data Drives after reinstall</summary>
+  
+* zfs list
+* zfs import pool name
+* Afterward you should see the drive to do this:
+* Datacenter>Storage>Add>ZFS
+* Info for above came from here and was personally used once - https://forum.proxmox.com/threads/how-to-attach-zfs-volume-to-pve-5-2.51282/
+* Then you can re-create the VMs, afterward just edit the VM config to use the old data files - can delete the new files it created.
+</details>
