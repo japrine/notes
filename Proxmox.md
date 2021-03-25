@@ -169,3 +169,12 @@ cpu: host,hidden=1,flags=+pcid
 * Info for above came from here and was personally used once - https://forum.proxmox.com/threads/how-to-attach-zfs-volume-to-pve-5-2.51282/
 * Then you can re-create the VMs, afterward just edit the VM config to use the old data files - can delete the new files it created.
 </details>
+
+---
+
+<details>
+  <summary>Import OVA as Proxmox VM</summary>
+  
+[Import OVA as Proxmox VM](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/)
+Create VM, convert and upload disk, assign to VM
+</details>
