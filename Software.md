@@ -40,3 +40,10 @@ Software that seems to work.
 * NVidia NVFlash - https://www.techpowerup.com/download/nvidia-nvflash/
 * VBios Collection - https://www.techpowerup.com/vgabios/
 </details>
+
+<details>
+  <summary>Server / Network Logging and Monitoring</summary>
+  
+* Zabbix - https://www.zabbix.com/network_monitoring#why_zabbix
+* LibreNMS - https://www.librenms.org/#prettyPhoto
+</details>
