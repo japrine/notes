@@ -3,6 +3,8 @@ Notes by Topic
 
 [Software List](Software.md)
 
+[VSCode](vscode.md)
+
 [Windows Notes](Windows.md)
 
 [Proxmox Notes](Proxmox.md)
