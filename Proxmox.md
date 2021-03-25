@@ -17,6 +17,16 @@ echo "deb http://download.proxmox.com/debian jessie pve-no-subscription" > /etc/
 ---
 
 <details>
+  <summary>Windows VM Stuff</summary>
+  
+* [Windows 10 Guest Bests](https://pve.proxmox.com/wiki/Windows_10_guest_best_practices) - Agent setup etc
+* [Virtio Driver Github](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) - Latest virtio driver downloads
+* [ISO building with drivers](https://pve.proxmox.com/wiki/Windows_guests_-_build_ISOs_including_VirtIO_drivers) - Build ISO that includes VirtIO drivers
+</details>
+
+---
+
+<details>
   <summary>File Locations</summary>
   
 * Non-ZFS Boot load - /etc/default/grub (afterward update-grub)
